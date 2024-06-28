@@ -1,0 +1,12 @@
+<!-- glycemie.component.html -->
+<div>
+  <h2>Liste des Lectures de Glycémie</h2>
+  <ul>
+    @for (lecture of lectures; track lecture) {
+      <li>{{lecture.id}}</li>
+      <li>{{lecture.date_of_Tracking}}</li>
+      <li>{{lecture.valeur}}</li>
+      <li>{{lecture.time_of_Tracking}}</li>
+    }
+  </ul>
+</div>
