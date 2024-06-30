@@ -1,0 +1,30 @@
+<!--<div>
+  <h2>Liste des Lectures de Glycémie</h2>
+  <ul>
+    <li *ngFor="let lecture of lectures; trackBy: trackByLectureId">
+      <div>ID: {{ lecture.id }}</div>
+      <div>Date: {{ lecture.date_of_Tracking }}</div>
+      <div>Valeur: {{ lecture.valeur }}</div>
+      <div>Time: {{ lecture.time_of_Tracking }}</div>
+    </li>
+  </ul>
+</div>
+
+<div>
+  <h2>Ajouter une nouvelle Lecture de Glycémie</h2>
+  <form (ngSubmit)="addLecture()">
+    <div>
+      <label for="date">Date:</label>
+      <input id="date" [(ngModel)]="newLecture.date_of_Tracking" name="date" type="date" required>
+    </div>
+    <div>
+      <label for="time">Time:</label>
+      <input id="time" [(ngModel)]="newLecture.time_of_Tracking" name="time" type="time" required>
+    </div>
+    <div>
+      <label for="valeur">Valeur:</label>
+      <input id="valeur" [(ngModel)]="newLecture.valeur" name="valeur" type="number" required>
+    </div>
+    <button type="submit">Ajouter Lecture</button>
+  </form>
+</div>-->

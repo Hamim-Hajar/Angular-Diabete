@@ -3,25 +3,57 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { AppComponent } from './app.component';
-import { GlycemieComponent } from "./glecimie-compenent/glecimie-compenent.component";
-import {HttpClient, HttpClientModule} from "@angular/common/http";
+import { GlecimieCompenentComponent } from "./glecimie-compenent/glecimie-compenent.component";
+import {HttpClient, HttpClientModule, provideHttpClient, withFetch} from "@angular/common/http";
 import {GlecimieServiceService} from "./glecimie-service.service";
+import {GlycemieFormComponent} from "./glycemie-form/glycemie-form.component";
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+
+import { MatInputModule } from '@angular/material/input';
+
+import { MatButtonModule } from "@angular/material/button";
+
+import { MatFormFieldModule } from '@angular/material/form-field';
+// @ts-ignore
+import { MatDatepickerModule } from '@angular/material/datepicker';
+// @ts-ignore
+import { MatNativeDateModule } from '@angular/material/core';
+// @ts-ignore
+import {MatIcon} from "@angular/material/icon";
+// @ts-ignore
+import {MatToolbar, MatToolbarRow} from "@angular/material/toolbar";
+
 
 @NgModule({
   declarations: [
-    GlycemieComponent
+    GlecimieCompenentComponent
   ],
 
   imports: [
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatIcon,
+    MatToolbarRow,
+    MatToolbar,
+    GlycemieFormComponent
+
   ],
   exports: [
-    GlycemieComponent
+    GlycemieFormComponent,
+    GlecimieCompenentComponent
   ],
   providers: [
     GlecimieServiceService,
-    provideClientHydration()
+    provideClientHydration(),
+    provideHttpClient(withFetch())
   ]
 })
 

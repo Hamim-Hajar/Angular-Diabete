@@ -1,0 +1,96 @@
+/* glycemie.component.css */
+
+/* Container Styles */
+.container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+h2, h3 {
+  color: #82b7e4;
+  text-align: center;
+}
+
+/* List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+/* Form Styles */
+.form-container {
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+button {
+  align-self: center;
+  margin-top: 20px;
+}
+
+/* Button Styles */
+.mat-button {
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.mat-button-primary {
+  background-color: #1976d2;
+  color: white;
+}
+
+.mat-button-primary:hover {
+  background-color: #82b7e4;
+}
+
+.mat-button-warn {
+  background-color: #7acdad;
+  color: white;
+
+}
+
+.mat-button-warn:hover {
+  background-color: #047c53;
+}
+
+/* Style for the 'Update' button in the form */
+.mat-raised-button {
+  background-color: #648bae;
+  color: white;
+}
+
+.mat-raised-button:hover {
+  background-color: #648bae;
+}

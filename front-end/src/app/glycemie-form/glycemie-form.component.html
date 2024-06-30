@@ -1,0 +1,19 @@
+<p>glycemie-form works!</p>
+<form [formGroup]="glycemieForm" (ngSubmit)="saveGlycemie()">
+  <div>
+    <label for="date_of_Tracking">Date of Tracking:</label>
+    <input formControlName="date_of_Tracking" type="date" id="date_of_Tracking" required>
+  </div>
+
+  <div>
+    <label for="time_of_Tracking">Time of Tracking:</label>
+    <input formControlName="time_of_Tracking" type="time" id="time_of_Tracking" required>
+  </div>
+
+  <div>
+    <label for="valeur">Valeur:</label>
+    <input formControlName="valeur" type="number" id="valeur" required>
+  </div>
+
+  <button type="submit">Save</button>
+</form>
